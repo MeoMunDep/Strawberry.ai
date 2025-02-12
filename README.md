@@ -30,7 +30,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
 1. **Install Dependencies and Modules:**
 
    ```
-   npm i user-agents axios colors p-limit https-proxy-agent socks-proxy-agent uuid 
+   npm i user-agents axios colors p-limit https-proxy-agent socks-proxy-agent uuid proper-lockfile
    ```
 
 2. **Prepare Configuration Files:**
