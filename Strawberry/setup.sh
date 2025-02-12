@@ -30,22 +30,15 @@ fi
 create_default_configs() {
     cat > configs.json << EOL
 {
-    "timeZone": "en-US",
-    "rotateProxy": false,
-    "skipInvalidProxy": false,
-    "proxyRotationInterval": 2,
-    "delayEachAccount": [5, 8],
-    "timeToRestartAllAccounts": 300,
-    "howManyAccountsRunInOneTime": 10,
-    "doTasks": true,
-    "playGames": true,
-    "referralCode": ""
+  "referralCode": "9ZOQHCPNP",
+  "passwordsForCreateAccounts": "123456789",
+  "howManyAccountsRunInOneTimeWhenCreateAccounts": 100
 }
 EOL
 }
 
 check_configs() {
-    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.howManyAccountsRunInOneTime !== 'number' || cfg.howManyAccountsRunInOneTime < 1) throw new Error('Invalid config');" 2>/dev/null; then
+    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.howManyAccountsRunInOneTimeWhenCreateAccounts !== 'number' || cfg.howManyAccountsRunInOneTimeWhenCreateAccounts < 1) throw new Error('Invalid config');" 2>/dev/null; then
         print_red "Invalid configuration detected. Resetting to default values..."
         create_default_configs
         print_green "Configuration reset completed."
@@ -54,9 +47,9 @@ check_configs() {
 
 while true; do
     clear
-    echo "================================="
-    echo "    name BOT SETUP AND RUN SCRIPT"
-    echo "================================="
+    echo "==================================================================""
+    echo "    Strawberry BOT SETUP AND RUN SCRIPT"
+    echo "==================================================================""
     echo
     echo "Current directory: $(pwd)"
     echo "Node modules directory: $MODULES_DIR/node_modules"
@@ -115,7 +108,7 @@ while true; do
             else
                 print_green "Using node_modules from current directory"
             fi
-            node bot
+            node meomundep
             read -p "Press Enter to continue..."
             ;;
         4)
