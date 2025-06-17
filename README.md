@@ -1,7 +1,6 @@
 📞 Contact
 
-> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux.)
-
+> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
 > If you encounter any issues or have questions, feel free to reach out:
 
@@ -25,7 +24,6 @@ Before running the bot, make sure you have the following installed:
 Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257/1462).
 
 -> Double click on `run.bat` for windows or `run.sh` for linux/mac if you want to run automatically, remember to fill all the necessary data.
-
 
 1. **Install Dependencies and Modules:**
 
@@ -80,6 +78,6 @@ socks5://user:password@host:port
 💡 Usage:
 
 > You need to `cd` to the file after extract it.
-> To run the bot, use the following command: `cd "strawberry/strawberry"; node meomundep`
+> To run the bot, use the following command: `cd "strawberry"; node meomundep`
 
 🎇Enjoy!
